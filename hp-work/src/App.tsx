@@ -1,0 +1,28 @@
+// MUIのコンポーネントをインポート、使用するものはここで定義
+import { Box, SxProps, Theme } from "@mui/material";
+import "./style.css";
+
+// 使用するコンポートをインポート
+import { Route, Routes } from "react-router-dom";
+import { HomePage } from "./pages/HomePage";
+import { SamplePage } from "./pages/SamplePage";
+
+// Appのメインの実装（表示する画面とpathを定義）
+export const App = () => {
+  return (
+    <Box className="App" sx={sx}>
+      <Routes>
+        {/* トップページ*/}
+        <Route path="/" element={<HomePage />} />
+        {/* サンプルページ */}
+        <Route path="/sample" element={<SamplePage />} />
+      </Routes>
+    </Box>
+  );
+};
+
+const sx: SxProps<Theme> = {
+  "&.App": {
+    width: "100%",
+  }
+};
