@@ -3,7 +3,7 @@ import { Box, SxProps, Theme } from "@mui/material";
 export const Company = () => {
   return (
     <Box className="Company" sx={sx}>
-      <h2 className="center"><span className="white">C</span>ompany<span className="mini">会社概要</span></h2>
+      <h2 className="center"><span className="white">C</span><span className="opacity">ompany</span><span className="mini">会社概要</span></h2>
       <table className="companyTable">
         <tbody>
           <tr>
@@ -52,4 +52,8 @@ const sx: SxProps<Theme> = {
     color: "#fff",
     padding: "60px 0"
   },
+  ".opacity" : {
+    color: "#fff",
+    opacity: 0.6,
+  }
 };

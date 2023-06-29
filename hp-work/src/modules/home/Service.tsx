@@ -1,7 +1,7 @@
 import { Box, SxProps, Theme } from "@mui/material";
-import Image1 from "../../resources/work1/images/bicycle1.jpg";
-import Image2 from "../../resources/work1/images/bicycle2.jpg";
-import Image3 from "../../resources/work1/images/bicycle3.jpg";
+import Image1 from "../../resources/work/service_guild.png";
+import Image2 from "../../resources/work/service_element.png";
+import Image3 from "../../resources/work/service_education.png";
 import { FontDownload } from "@mui/icons-material";
 
 export const Service = () => {
@@ -9,7 +9,7 @@ export const Service = () => {
     <Box className="Service" sx={sx}>
       <h2 className="center"><span className="blue">S</span>ervice<span className="mini">事業内容</span></h2>
       <div className="flex contents">
-        <img src={Image1}/>
+        <img className="img imgL" src={Image1}/>
         <div>
           <h3>プログラマーズギルド<br/>
             <span className="titleEn blue">Programmers Guild</span><br/>
@@ -20,7 +20,7 @@ export const Service = () => {
               副業を主体としているため長時間の拘束稼働はできませんが、トップレベルの知識と経験を活かして複数人でチームとなってクライアントの業務を請け負います。 
               クライアント側のチームメンバーと共同して開発を行うこともできるため、クライアント所属のエンジニアのスキルアップを行うことも可能です。
           </p>
-          <a className="blue" href="#">MORE</a>
+          <a className="blue more" href="#">MORE</a>
         </div>
       </div>
       <div className="flex contents">
@@ -35,12 +35,12 @@ export const Service = () => {
             また、現役の Web/IT エンジニアも多数所属しているため、開発から得た知見や技術も提供することができます。
             結果として保守性が高く、事業の規模や今後のスケールに合わせて拡張しやすい、高品質な開発のサポートを行うことも可能です。
           </p>
-          <a className="blue" href="#">MORE</a>
+          <a className="blue more" href="#">MORE</a>
         </div>
-        <img src={Image2}/>
+        <img className="img imgR" src={Image2}/>
       </div>
       <div className="flex contents">
-        <img src={Image3}/>
+        <img className="img imgL" src={Image3}/>
         <div>
           <h3>エンジニア教育<br/>
             <span className="titleEn blue">Top engineer Experience Program</span><br/>
@@ -52,7 +52,7 @@ export const Service = () => {
             TEP では弊社で受けている案件をテクノスタンダードギルドのトップレベルのエンジニアと一緒に行うことで実際に必要なことを体験でき、 トップレベルの開発者のコードを読むことで動くだけのシステムではなく保守まで考えられた堅牢なシステム開発を経験できます。
             TEP参加希望者に向けた事前授業も行っており、スクールでは教えていないエンジニアの必須スキルである、コマンド操作、サーバー構築、git、設計の基礎などのできて当たり前の基礎技術を5日間で教えることも行っています。
           </p>
-          <a className="blue" href="#">MORE</a>
+          <a className="blue more" href="#">MORE</a>
         </div>
       </div>
     </Box>
@@ -66,8 +66,16 @@ const sx: SxProps<Theme> = {
     fontWeight: "400",
     padding: "60px 0"
   },
-  "contents" : {
-    width: "95%",
+  ".contents" : {
+    width: "85%",
+    margin: "0 auto 80px",
+    justifyContent: "space-between",
+  },
+  ".imgL" : {
+    margin: "0 calc(50% - 50vw)",
+  },
+  ".imgR" : {
+    margin: "0 calc(50% - 50vw)",
   },
   ".titleEn" : {
     fontSize: "48px",
@@ -77,4 +85,12 @@ const sx: SxProps<Theme> = {
     fontSize: "24px",
     fontWeight: "600",
   },
+  ".more" : {
+    fontFamily: "Avenir Next",
+    fontSize: "20px",
+    fontWeight: 600,
+    lineHeight: "27px",
+    letterSpacing: "0.1em",
+    textAlign: "left",
+  }
 };

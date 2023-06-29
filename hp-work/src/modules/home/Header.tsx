@@ -2,10 +2,10 @@ import { Box, SxProps, Theme } from "@mui/material";
 
 export const Header = () => {
   return (
-    <Box className="Header" sx={sx}>
+    <Box className="Header white" sx={sx}>
       <div className="flex justify-between">
-        <div>テクノスタンダード</div>
-        <nav className="flex justify-around">
+        <div>テクノスタンダードロゴ</div>
+        <nav className="flex justify-around h-nav">
           <li>TOP</li>
           <li>ABOUT</li>
           <li>SERVICE</li>
@@ -19,6 +19,8 @@ export const Header = () => {
 
 const sx: SxProps<Theme> = {
   "&.Header" : {
+    position: "absolute",
+    zIndex: 100,
     width: "100%",
   },
 };

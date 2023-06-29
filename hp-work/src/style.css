@@ -1,3 +1,10 @@
+body {
+  font-size: 16px;
+  font-weight: 400;
+}
+a {
+  text-decoration: none;
+}
 li {
   list-style: none;
 }
@@ -14,13 +21,15 @@ li {
   text-align: center;
 }
 
-nav {
+.h-nav {
   font-size: 24px;
   font-weight: 500;
 }
-nav li {
-  /* color: #fff; */
+.h-nav li {
   padding: 25px;
+}
+.f-nav li {
+  padding: 40px;
 }
 .backBlue {
   background-color: #22A1B9;
@@ -29,7 +38,7 @@ nav li {
 h1 {
   font-size: 96px;
   font-weight: 700;
-  /* color: #fff; */
+  color: #fff;
 }
 h1 span {
   font-size: 48px;
@@ -56,6 +65,7 @@ h2 {
   height: 100%;
 }
 .w-75 {
+  display: block;
   width: 75%;
   margin: 0 auto;
 }
@@ -63,11 +73,20 @@ h2 {
   width: 60%;
   margin: 0 auto;
 }
-.contents img,
-.contents div {
-  width: 48%;
+.w-50 {
+  width: 50%;
+  margin: 0 auto;
 }
 
+/* Service */
+.contents img {
+  width: 60%;
+}
+.contents div {
+  width: 43%;
+}
+
+/* Company */
 .companyTable {
   width: 50%;
   margin: 0 auto;
