@@ -1,11 +1,11 @@
 import { Margin } from "@mui/icons-material";
 import { Box, SxProps, Theme } from "@mui/material";
-import Image from "../../resources/work1/images/about.jpg"
+import Image from "../../resources/work/about_illustration.png"
 
 export const About = () => {
   return (
-    <Box className="About" sx={sx}>
-      <h2 className="center"><span className="blue">A</span>bout<span className="mini">私たちについて</span></h2>
+    <Box className="About, center" sx={sx}>
+      <h2><span className="blue">A</span>bout<span className="mini">私たちについて</span></h2>
       <img className="img w-75" src={Image}/>
       <div className="w-60">
         <p>副業人材を主体とした<span className="blue">「業務委託サービス」</span>です。<br/>
